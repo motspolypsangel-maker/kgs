@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krang Guard Security Co., Ltd.</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+      font-size: 20px; /* ✅ ขนาดฟอนต์หลัก */
+    }
+    header {
+      background: #0a2a43;
+      color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {height: 60px;margin-right: 15px;}
+    header h1 {margin: 0;font-size: 22px;}
+    .logo-box {display: flex;align-items: center;}
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {color: #ffcc00;}
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581091012184-5c5a42a04f9b?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;left: 0;
+      width: 100%;height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero > div {position: relative;z-index: 2;}
+    .hero h2 {font-size: 40px;margin-bottom: 10px;}
+    .hero p {font-size: 22px;margin-bottom: 20px;}
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ffcc00;
+      color: #0a2a43;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn:hover {background: #e6b800;}
+    section {padding: 60px 40px;max-width: 1200px;margin: auto;}
+    section h2 {text-align: center;color: #0a2a43;margin-bottom: 30px;font-size: 32px;}
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {transform: translateY(-5px);}
+    .card img {width: 100%;height: 180px;object-fit: cover;}
+    .card-content {padding: 20px;}
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    form label {font-weight: bold;display: block;margin-top: 15px;}
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+    form button {
+      margin-top: 20px;
+      padding: 12px;
+      background: #0a2a43;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    form button:hover {background: #07304d;}
+    footer {
+      background: #0a2a43;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-box">
+      <img src="logo.png" alt="Krang Guard Logo">
+      <h1>Krang Guard Security Co., Ltd.</h1>
+    </div>
+    <nav>
+      <a href="#about">เกี่ยวกับ</a>
+      <a href="#services">บริการ</a>
+      <a href="#quote">ขอใบเสนอราคา</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Krang Guard Security</h2>
+      <p>มั่นคง ปลอดภัย ใส่ใจบริการ  ทีมงานมืออาชีพเพื่อความอุ่นใจของคุณ</p>
+      <a href="#quote" class="btn">ขอใบเสนอราคา</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>เกี่ยวกับบริษัท</h2>
+    <p>
+      <strong>บริษัท Krang Guard Security Co., Ltd.</strong> 
+      ก่อตั้งขึ้นเพื่อมุ่งมั่นให้บริการด้านการรักษาความปลอดภัยแบบครบวงจร 
+      ด้วยทีมงานที่มีประสบการณ์ตรง ความซื่อสัตย์ และความรับผิดชอบสูงสุด 
+      เราเชื่อว่าความปลอดภัยคือรากฐานสำคัญของความสุขและความมั่นคงในชีวิตและธุรกิจ
+    </p>
+    
+    <h3>ประวัติความเป็นมา</h3>
+    <p>
+      บริษัท Krang Guard Security Co., Ltd. ก่อตั้งขึ้นโดย 
+      <strong>คุณพงพัน อัมภรณ์</strong> ผู้มีประสบการณ์และความมุ่งมั่นในด้านงานรักษาความปลอดภัย 
+      โดยมีวิสัยทัศน์ที่จะยกระดับมาตรฐานการรักษาความปลอดภัยในประเทศไทยให้ทัดเทียมมาตรฐานสากล 
+      ด้วยเทคโนโลยีที่ทันสมัย ทีมงานมืออาชีพ และการบริหารจัดการที่โปร่งใส
+    </p>
+    
+    <h3>วิสัยทัศน์ (Vision)</h3>
+    <blockquote>
+      “มุ่งสู่การเป็นผู้นำด้านบริการรักษาความปลอดภัยที่ได้รับความเชื่อถือสูงสุดในประเทศไทย 
+      ด้วยมาตรฐานสากล เทคโนโลยีทันสมัย และบุคลากรมืออาชีพ”
+    </blockquote>
+    
+    <h3>พันธกิจ (Mission)</h3>
+    <ul>
+      <li>พัฒนาบุคลากรรักษาความปลอดภัยให้มีความรู้ ความสามารถ และคุณธรรม</li>
+      <li>ใช้เทคโนโลยีด้านความปลอดภัยสมัยใหม่ เพื่อเพิ่มประสิทธิภาพในการดูแลพื้นที่และทรัพย์สิน</li>
+      <li>สร้างระบบบริหารจัดการที่โปร่งใส ซื่อสัตย์ และตรวจสอบได้</li>
+      <li>มอบบริการที่ยึดลูกค้าเป็นศูนย์กลาง โดยเน้นความพึงพอใจและความปลอดภัยสูงสุด</li>
+      <li>ร่วมมือกับภาครัฐ เอกชน และชุมชน เพื่อสร้างสังคมที่ปลอดภัยและน่าอยู่</li>
+    </ul>
+  </section>
+
+  <section id="services">
+    <h2>บริการของเรา</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603903642859-f5f25c7e4dfb?auto=format&fit=crop&w=800&q=80" alt="รักษาความปลอดภัยสถานประกอบการ">
+        <div class="card-content">
+          <h3>รักษาความปลอดภัยสถานประกอบการ</h3>
+          <p>ทีมรปภ. ผ่านการฝึกอบรม และการจัดการเวรยืดหยุ่นตามความต้องการ</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1607860108855-c8b1748e90c9?auto=format&fit=crop&w=800&q=80" alt="รักษาความปลอดภัยอาคารสำนักงาน">
+        <div class="card-content">
+          <h3>รักษาความปลอดภัยอาคารสำนักงาน</h3>
+          <p>ระบบควบคุมการเข้า-ออก และทีมเฝ้ายามที่ผ่านการอบรมด้านการบริการ</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80" alt="รักษาความปลอดภัยงานอีเวนต์">
+        <div class="card-content">
+          <h3>รักษาความปลอดภัยงานอีเวนต์</h3>
+          <p>การจัดกำลังคนควบคุมฝูงชนและแผนความปลอดภัยเฉพาะงาน</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604335399105-2a3386e4f1bc?auto=format&fit=crop&w=800&q=80" alt="ลาดตระเวนและตรวจสอบพื้นที่">
+        <div class="card-content">
+          <h3>ลาดตระเวนและตรวจสอบพื้นที่</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1602263152291-31f52a371bcc?auto=format&fit=crop&w=800&q=80" alt="VIP Security">
+        <div class="card-content">
+          <h3>บริการรักษาความปลอดภัยบุคคลสำคัญ (VIP)</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1625835202590-b327b69a091d?auto=format&fit=crop&w=800&q=80" alt="CCTV">
+        <div class="card-content">
+          <h3>ติดตั้งและดูแลระบบ CCTV</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote">
+    <h2>ขอใบเสนอราคา</h2>
+    <form>
+      <label>ชื่อ-นามสกุล</label>
+      <input type="text" placeholder="กรอกชื่อของคุณ" required>
+      
+      <label>อีเมล</label>
+      <input type="email" placeholder="example@mail.com" required>
+      
+      <label>รายละเอียดความต้องการ</label>
+      <textarea rows="5" placeholder="เช่น ต้องการ รปภ. จำนวนกี่คน / กี่ชั่วโมง"></textarea>
+      
+      <label>อัปโหลดไฟล์ภาพ (ถ้ามี)</label>
+      <input type="file">
+      
+      <button type="submit">ส่งคำขอใบเสนอราคา</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>📍 ที่อยู่: 224 หมู่ 6 ตำบลไร่น้อย อำเภอเมืองอุบลราชธานี จังหวัดอุบลราชธานี 34000</p>
+    <p>☎️ โทร: 099-848-0124</p>
+    <p>📧 Email: <a href="mailto:motspolypsangel@gmail.com">motspolypsangel@gmail.com</a></p>
+    <p>📱 Facebook Page: Krang Guard Security Co., Ltd.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Krang Guard Security Co., Ltd. All rights reserved.</p>
+    <p>พัฒนาโดยทีมงาน Krang Guard — ติดต่อ: motspolypsangel@gmail.com</p>
+  </footer>
+
+</body>
+</html>
